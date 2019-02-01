@@ -1,0 +1,24 @@
+# Created by https://www.gitignore.io/api/bower,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=bower,visualstudiocode
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+### VisualStudioCode ###
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/bower,visualstudiocode
+
+generator/

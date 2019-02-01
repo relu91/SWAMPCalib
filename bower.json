@@ -1,0 +1,26 @@
+{
+  "name": "calibration",
+  "authors": [
+    "reluc <relu.cri@gmail.com>"
+  ],
+  "description": "A simple application for calibrating soil sensor",
+  "main": "index.html",
+  "keywords": [
+    "swamp",
+    "wot",
+    "unibo"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "sepa-js": "0.4.0"
+  }
+}

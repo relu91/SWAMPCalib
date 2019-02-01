@@ -1,0 +1,30 @@
+.table-textfield {
+    width: 50px !important;
+}
+html>body{font-family:'Roboto','Helvetica','Arial',sans-serif!important;}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  position: absolute;
+  transition: all .3s  ease;
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.animated{
+  background: white;
+  transition: all 0.3s ease-in;
+}
+
+.center-elements {
+  display:flex; 
+  justify-content: 
+  center;align-items: center;
+}
