@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>SWAMP Calib</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+    
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <meta name="google-signin-client_id" content="580774902883-9brt4i57e10nidlf65jeaa31m08venm6.apps.googleusercontent.com">
   
@@ -29,7 +29,7 @@
             <div id="login-button" v-if="!signed" ></div>
         </div>
         <div v-else>
-        <div id="status" class="mdl-grid" style="margin : unset">
+        <div id="status" class="mdl-grid swamp-panel ">
             <div class="mdl-cell--8-col mdl-cell--middle" style="display:flex;justify-content: center;align-items: center;">
                 <div>
                     <object id="sensor-logo" type="image/svg+xml" :data="connected ? 'img/connected.svg': 'img/disconnected.svg'" style="min-height: 225px">
@@ -79,7 +79,7 @@
               </div>
             </div>
         </div>
-        <div class= "mdl-grid" style="margin: unset">
+        <div class= "swamp-panel mdl-grid" style="margin: unset">
             <div class="center-elements mdl-cell--8-col"  >
                 <div style="min-height: 270px; max-height: 270px; width: 80%; " >
                 <canvas id="regression"  width="1" height="1"></canvas>
@@ -149,4 +149,5 @@
 
 <script src="lib/main.js" type="module"></script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
 </html>
