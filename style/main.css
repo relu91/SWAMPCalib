@@ -1,10 +1,7 @@
 .table-textfield {
     width: 50px !important;
 }
-.login {
-  
 
-}
 html>body{font-family:'Roboto','Helvetica','Arial',sans-serif!important;}
 
 /* Enter and leave animations can use different */
@@ -31,4 +28,15 @@ html>body{font-family:'Roboto','Helvetica','Arial',sans-serif!important;}
   display:flex; 
   justify-content: center;
   align-items: center;
+}
+
+.swamp-panel{
+  margin: unset;
+}
+
+@media only screen and (max-width: 1024px) {
+  .swamp-panel {
+    flex-direction: column;
+    align-items: center;
+  }
 }
