@@ -71,7 +71,7 @@
                             :disabled="mesuring || !connected">
                         <label class="mdl-textfield__label" style="text-align: center" for="sample1">Humidity</label>
                     </div>
-                    <button class="mdl-button mdl-js-button  mdl-button--raised mdl-js-ripple-effect" :disabled="!connected" style="width: 100%">
+                    <button class="mdl-button mdl-js-button  mdl-button--raised mdl-js-ripple-effect" :disabled="!connected || !humidity" style="width: 100%">
                         {{ !mesuring ? "Start" : "Stop" }}
                     </button>
                 </form>
@@ -91,7 +91,13 @@
                     <!-- Left aligned menu below button -->
                     <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon" @click="save">
                         <i class="material-icons">cloud_download</i>
+                        
                     </button>
+                    <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon" @click="clear">
+                        <i class="material-icons">delete_forever</i>
+                        
+                    </button>
+                    
                </caption>
                 <thead>
                     <tr>
@@ -103,17 +109,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="" v-for="(sample, index) in data">
+                    <tr class="" v-for="(sample, index) in data" :key="index">
                         <td>{{sample.voltage}}</td>
-                        <td>
-                            <form action="" v-on:submit.prevent>
+                        <td> {{sample.humidity}}
+                            <!-- <form action="" v-on:submit.prevent>
                                 <div class="table-textfield mdl-textfield mdl-js-textfield">
-                                    <input class="mdl-textfield__input" type="text" style="text-align: center" v-model.number="sample.humidity"
-                                        type="number">
+                                    <input class="mdl-textfield__input" type="text" style="text-align: center"  v-model.number="sample.humidity"
+                                        type="number" disabled>
                                     <label class="mdl-textfield__label" style="text-align: center" for="sample1">%</label>
                                 </div>
             
-                            </form>
+                            </form> -->
                         </td>
                     </tr>
                 </tbody>
