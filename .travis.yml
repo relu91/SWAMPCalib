@@ -9,7 +9,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/ <ssh-user>@<deploy-host>:/var/www/html/apps/swamp/calibration
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/ cristianoaguzzi@mml.arces.unibo.it:/var/www/html/apps/swamp/calibration
   on:
     branch: master
 env:
