@@ -89,15 +89,20 @@
             <table id="app" class=" mdl-data-table mdl-js-data-table mdl-cell " >
                 <caption class="mdl-color--primary" style="text-align: left; color: whitesmoke">
                     <!-- Left aligned menu below button -->
-                    <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon" @click="save">
+                    <button id="download" class="mdl-button mdl-js-button mdl-button--icon" @click="save">
                         <i class="material-icons">cloud_download</i>
                         
                     </button>
-                    <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon" @click="clear">
+                    <div class="mdl-tooltip" data-mdl-for="download">
+                        Download your data as csv file
+                    </div>
+                    <button id="clear" class="mdl-button mdl-js-button mdl-button--icon" @click="clear">
                         <i class="material-icons">delete_forever</i>
                         
                     </button>
-                    
+                    <div class="mdl-tooltip" data-mdl-for="clear">
+                        Delete all your data. <br> WARNING: this action is permanent
+                    </div>
                </caption>
                 <thead>
                     <tr>
