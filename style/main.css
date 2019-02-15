@@ -8,6 +8,7 @@ body {
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE 10+ */
+    padding: 0px !important;
 }
 body::-webkit-scrollbar { /* WebKit */
     width: 0px;
