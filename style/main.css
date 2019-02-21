@@ -50,3 +50,8 @@ body::-webkit-scrollbar { /* WebKit */
     align-items: center;
   }
 }
+
+.mdl-textfield{
+    width: 100%;
+    margin: -10px 0;
+}
