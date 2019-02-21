@@ -31,7 +31,7 @@
         <div v-else>
         <div id="status" class="mdl-grid swamp-panel ">
             <div class="mdl-cell--8-col mdl-cell--middle" style="display:flex;justify-content: center;align-items: center;">
-                <div>
+                <div style="display:flex;flex-flow: column">
                     <object id="sensor-logo" type="image/svg+xml" :data="connected ? 'img/connected.svg': 'img/disconnected.svg'" style="min-height: 225px">
                         Sensor logo
                         <!-- fallback image in CSS -->
@@ -43,8 +43,8 @@
                         The sensor is connected. You should be able to acquire data.
                     </div>
                     <p>
-                        Status: {{connected ? "Connected": "Offline"}}
-                        Battery level : {{battery}}%
+                        Status: <b>{{connected ? "Connected": "Offline"}}</b>
+                        Battery level: <b>{{battery}}%</b>
                     </p>
                 </div>
             </div>
