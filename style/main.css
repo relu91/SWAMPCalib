@@ -55,3 +55,8 @@ body::-webkit-scrollbar { /* WebKit */
     width: 100%;
     margin: -10px 0;
 }
+
+th{
+  text-align: center !important;
+  vertical-align: middle !important;
+}
