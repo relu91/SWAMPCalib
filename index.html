@@ -55,8 +55,8 @@
                 <transition-group name="slide-fade">
                     <div key="dynamic" class="collecting-tab" v-if="mesuring">
                         <div id="collecting-tab-content">
-                            <h1>{{sampleCount}}</h1>
-                            <h4>Collecting</h4>
+                            <h3 style="margin-bottom: 10px; margin-top: 0px;">{{sampleCount}} sample{{sampleCount > 1 ? "s" : ""}}<h3>
+                            <h6 style="margin:2px;">Collecting</h6>
                             <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
                         </div>
                     </div>
@@ -65,11 +65,11 @@
                     <div style="display:flex;align-items: center">
 
                         <div style="display: flex;flex-flow: column;align-items: center;margin-right: 15px">
-                            <object type="image/svg+xml" data="img/sample.svg" style="max-height: 90px;margin: 10px">
+                            <object type="image/svg+xml" data="img/sample.svg" style="max-height: 80px;margin: 10px;margin-bottom: 2px">
                                 Sample
                                 <!-- fallback image in CSS -->
                             </object>
-                            <h7>{{density | noNaN }} g/cm^3</h7>
+                            <p style="font-size: 14px">{{density | noNaN }} g/cm^3</p>
                         </div>
                         <div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -84,7 +84,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mdl-textfield mdl-js-textfield ">
+                    <div class="mdl-textfield mdl-js-textfield  mdl-textfield--floating-label" style="margin-top: unset">
                         <input class="mdl-textfield__input" type="text" style="text-align: center" type="number"
                            v-model.number="currentMass"   :disabled="mesuring || !connected">
                         <label class="mdl-textfield__label" style="text-align: center" for="sample1"> Current Mass (g)</label>
