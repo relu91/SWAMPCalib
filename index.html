@@ -65,11 +65,17 @@
                     <div style="display:flex;align-items: center">
 
                         <div style="display: flex;flex-flow: column;align-items: center;margin-right: 15px">
-                            <object type="image/svg+xml" data="img/sample.svg" style="max-height: 80px;margin: 10px;margin-bottom: 2px">
+                            <object id="sample-icon" type="image/svg+xml" data="img/sample.svg" style="max-height: 80px;margin: 10px;margin-bottom: 2px">
                                 Sample
                                 <!-- fallback image in CSS -->
                             </object>
-                            <p style="font-size: 14px">{{density | noNaN }} g/cm^3</p>
+                            <p id="density-label" style="font-size: 14px">{{density | noNaN }} g/cm^3</p>
+                            <div class="mdl-tooltip" data-mdl-for="density-label">
+                                Sample density (&theta;)
+                            </div>
+                            <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="sample-icon">
+                                Soil sample, below you can see the calculated density (&theta;)
+                            </div>
                         </div>
                         <div>
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
