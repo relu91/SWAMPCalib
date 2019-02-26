@@ -51,6 +51,13 @@ body::-webkit-scrollbar { /* WebKit */
   }
 }
 
+@media only screen and (max-width: 839px) {
+  .mdl-card {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
 .mdl-textfield{
     width: 100%;
     margin: -10px 0;
